@@ -5,23 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".DashboardActivity"
+    tools:context=".activity.HomepanelActivity"
     android:layout_margin="10dp"
     >
+
     <Button
+        android:id="@+id/btnPresidents"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="President of USA"
-        android:id="@+id/btnPresidents"
-        android:layout_marginTop="25dp">
+        android:layout_marginTop="25dp"
+        android:text="Presidents"
+        android:textSize="24sp">
 
     </Button>
+
     <Button
+        android:id="@+id/btnForm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:text="Form"
-        android:id="@+id/btnForm"
-        android:layout_marginTop="25dp">
+        android:textSize="24sp">
 
     </Button>
 

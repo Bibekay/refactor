@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SpinnerDisplayActivity"
+    tools:context=".activity.DisplayActivity"
     android:layout_gravity="center"
     android:orientation="vertical"
     android:layout_margin="10dp">
@@ -12,13 +12,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your Profile"
-        android:textSize="40dp"
-        android:background="@color/blue"
+        android:background="#E64A19"
         android:gravity="center"
         android:padding="10dp"
-        android:textColor="#34495E"
-       />
+        android:text=" Profile"
+        android:textColor="#F39C12"
+        android:textSize="40dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -27,14 +26,15 @@
         android:textSize="25dp"
         android:textColor="#34495E"
         android:layout_marginTop="10dp" />
+
     <TextView
+        android:id="@+id/iName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Name Here :"
-        android:id="@+id/yName"
-        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Name is:"
         android:textColor="#F39C12"
-        android:layout_marginTop="10dp"/>
+        android:textSize="20dp" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,29 +42,32 @@
         android:textSize="25dp"
         android:textColor="#34495E"
         android:layout_marginTop="10dp"/>
+
     <TextView
+        android:id="@+id/iContact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your Phone Number :"
-        android:id="@+id/pNumber"
-        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Number is:"
         android:textColor="#F39C12"
-        android:layout_marginTop="10dp"/>
+        android:textSize="20dp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your E-Mail :"
-        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Your E-mail :"
         android:textColor="#34495E"
-        android:layout_marginTop="10dp"/>
+        android:textSize="25dp" />
+
     <TextView
+        android:id="@+id/iEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/email"
-        android:text="#F39C12"
-        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Email is:"
         android:textColor="#F39C12"
-        android:layout_marginTop="10dp"/>
+        android:textSize="20dp" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -75,7 +78,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/address"
+        android:id="@+id/iAddress"
         android:text="Your Address :"
         android:textSize="20dp"
         android:textColor="#F39C12"

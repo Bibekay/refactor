@@ -1,4 +1,4 @@
-package com.example.usa_presidents;
+package com.example.presidents.activity;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,11 +7,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.presidents.R;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class DetailsActivity extends AppCompatActivity {
-     TextView fullName, about;
-     CircleImageView imgProfile;
+    TextView fullName, about;
+    CircleImageView imgProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,10 +36,10 @@ public class DetailsActivity extends AppCompatActivity {
 
         //Intent intent = getIntent();
         if(bundle!=null) {
-           fullName.setText(bundle.getString("name"));
-           about.setText(bundle.getString("about"));
-           imgProfile.setImageResource(bundle.getInt("image"));
-           name.setTitle(fullName.getText().toString());
+            fullName.setText(bundle.getString("name"));
+            about.setText(bundle.getString("about"));
+            imgProfile.setImageResource(bundle.getInt("image"));
+            name.setTitle(fullName.getText().toString());
         }
 
 

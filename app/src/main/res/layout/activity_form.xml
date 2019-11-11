@@ -4,30 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SpinnerFormActivity"
+    tools:context=".activity.FormActivity"
     android:orientation="vertical"
     android:layout_gravity="center">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/personal"
-        android:textSize="40dp"
+        android:layout_gravity="center"
         android:layout_marginBottom="75dp"
-        android:textColor="@color/blue"
-        android:layout_gravity="center"/>
+        android:text="@string/personal"
+        android:textColor="#FBC02D"
+        android:textSize="40dp" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:id="@+id/pName"
+        android:id="@+id/personalName"
         android:hint="Enter your name"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:id="@+id/phoneNumber"
+        android:id="@+id/contactNumber"
         android:hint="Enter your phone number"
         android:inputType="number"
         />
@@ -35,19 +35,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:id="@+id/Email"
+        android:id="@+id/emailAddress"
         android:hint="Enter your e-mail"/>
 
     <Spinner
-        android:id="@+id/spinnerAddress"
+        android:id="@+id/spinAddress"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
-        android:background="@color/blue"
+        android:background="#FBC02D"
         android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Email" />
+        app:layout_constraintTop_toBottomOf="@+id/emailAddress" />
 
     <Button
         android:layout_width="match_parent"

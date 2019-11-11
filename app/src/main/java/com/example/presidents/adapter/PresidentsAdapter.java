@@ -1,4 +1,4 @@
-package com.example.usa_presidents;
+package com.example.presidents.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,10 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.presidents.Presidents;
+import com.example.presidents.R;
+import com.example.presidents.activity.DetailsActivity;
 
 import java.util.List;
 
@@ -40,7 +44,7 @@ public class PresidentsAdapter extends RecyclerView.Adapter<PresidentsAdapter.Pr
         holder.imgProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(mContext,DetailsActivity.class);
+                Intent intent = new Intent(mContext, DetailsActivity.class);
 
                 intent.putExtra("image",presidents.getImage());
                 intent.putExtra("name",presidents.getName());

@@ -1,4 +1,4 @@
-package com.example.usa_presidents;
+package com.example.presidents;
 
 public class Presidents {
 
